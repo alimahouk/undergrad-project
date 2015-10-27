@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pingamate", "pingamate\pingamate.vcxproj", "{B5AC9183-5079-47AC-B8E4-16D79488366B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pingamate", "pingamate\pingamate.vcxproj", "{57C375B9-CE5F-4528-9F01-0D3E8FFB2EB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B5AC9183-5079-47AC-B8E4-16D79488366B}.Debug|x64.ActiveCfg = Debug|x64
-		{B5AC9183-5079-47AC-B8E4-16D79488366B}.Debug|x64.Build.0 = Debug|x64
-		{B5AC9183-5079-47AC-B8E4-16D79488366B}.Debug|x86.ActiveCfg = Debug|Win32
-		{B5AC9183-5079-47AC-B8E4-16D79488366B}.Debug|x86.Build.0 = Debug|Win32
-		{B5AC9183-5079-47AC-B8E4-16D79488366B}.Release|x64.ActiveCfg = Release|x64
-		{B5AC9183-5079-47AC-B8E4-16D79488366B}.Release|x64.Build.0 = Release|x64
-		{B5AC9183-5079-47AC-B8E4-16D79488366B}.Release|x86.ActiveCfg = Release|Win32
-		{B5AC9183-5079-47AC-B8E4-16D79488366B}.Release|x86.Build.0 = Release|Win32
+		{57C375B9-CE5F-4528-9F01-0D3E8FFB2EB4}.Debug|x64.ActiveCfg = Debug|x64
+		{57C375B9-CE5F-4528-9F01-0D3E8FFB2EB4}.Debug|x64.Build.0 = Debug|x64
+		{57C375B9-CE5F-4528-9F01-0D3E8FFB2EB4}.Debug|x86.ActiveCfg = Debug|Win32
+		{57C375B9-CE5F-4528-9F01-0D3E8FFB2EB4}.Debug|x86.Build.0 = Debug|Win32
+		{57C375B9-CE5F-4528-9F01-0D3E8FFB2EB4}.Release|x64.ActiveCfg = Release|x64
+		{57C375B9-CE5F-4528-9F01-0D3E8FFB2EB4}.Release|x64.Build.0 = Release|x64
+		{57C375B9-CE5F-4528-9F01-0D3E8FFB2EB4}.Release|x86.ActiveCfg = Release|Win32
+		{57C375B9-CE5F-4528-9F01-0D3E8FFB2EB4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
