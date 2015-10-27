@@ -10,9 +10,9 @@ void Main(array<String^>^ args)
 {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-
+	
 	pingamate::MainWindow form;
-	HWND hwnd = (HWND)form.Handle.ToPointer();
+	HWND hwnd = (HWND)form.Handle.ToPointer(); // Get a window handle in case we need it later.
 
 	Application::Run(%form);
 }
