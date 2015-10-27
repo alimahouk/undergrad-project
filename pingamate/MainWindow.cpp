@@ -1,8 +1,9 @@
 #include "MainWindow.h"
 
+#include "Dwmapi.h"
+
 using namespace System;
 using namespace System::Windows::Forms;
-
 
 [STAThread]
 void Main(array<String^>^ args)
@@ -11,5 +12,7 @@ void Main(array<String^>^ args)
 	Application::SetCompatibleTextRenderingDefault(false);
 
 	pingamate::MainWindow form;
+	HWND hwnd = (HWND)form.Handle.ToPointer();
+
 	Application::Run(%form);
 }
