@@ -39,6 +39,9 @@ namespace pingamate {
 	private: System::Windows::Forms::Panel^  panel1;
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
 	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::TextBox^  textBox1;
+	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::Label^  label2;
 
 	private:
 		/// <summary>
@@ -57,15 +60,18 @@ namespace pingamate {
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// listView1
 			// 
-			this->listView1->Location = System::Drawing::Point(0, 126);
+			this->listView1->Location = System::Drawing::Point(0, 152);
 			this->listView1->Name = L"listView1";
-			this->listView1->Size = System::Drawing::Size(237, 438);
+			this->listView1->Size = System::Drawing::Size(237, 379);
 			this->listView1->TabIndex = 0;
 			this->listView1->UseCompatibleStateImageBehavior = false;
 			// 
@@ -95,15 +101,51 @@ namespace pingamate {
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
 			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(257, 479);
+			this->textBox1->Multiline = true;
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(416, 52);
+			this->textBox1->TabIndex = 2;
+			// 
+			// button1
+			// 
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->button1->Location = System::Drawing::Point(689, 479);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 52);
+			this->button1->TabIndex = 3;
+			this->button1->Text = L"SEND";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MainWindow::button1_Click);
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label2->Location = System::Drawing::Point(5, 123);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(62, 15);
+			this->label2->TabIndex = 4;
+			this->label2->Text = L"Contacts";
+			this->label2->Click += gcnew System::EventHandler(this, &MainWindow::label2_Click);
+			// 
 			// MainWindow
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(784, 562);
+			this->ClientSize = System::Drawing::Size(780, 557);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->listView1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::Fixed3D;
 			this->MaximizeBox = false;
+			this->MaximumSize = System::Drawing::Size(800, 600);
+			this->MinimumSize = System::Drawing::Size(800, 600);
 			this->Name = L"MainWindow";
 			this->Text = L"Pingamate";
 			this->Load += gcnew System::EventHandler(this, &MainWindow::MainWindow_Load);
@@ -111,10 +153,15 @@ namespace pingamate {
 			this->panel1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void MainWindow_Load(System::Object^  sender, System::EventArgs^  e) {
 	}
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label2_Click(System::Object^  sender, System::EventArgs^  e) {
+}
 };
 }
