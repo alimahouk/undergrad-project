@@ -29,6 +29,7 @@ package Demo_Chat;
 	    JTextField  messageBox;
 	    JTextArea   chatBox;
 	    JTextField  usernameChooser;
+	    JTextField  ipfeild;
 	    JFrame      preFrame;
 
 	    public static void main(String[] args) {
@@ -51,7 +52,9 @@ package Demo_Chat;
 	        newFrame.setVisible(false);
 	        preFrame = new JFrame(appName);
 	        usernameChooser = new JTextField(15);
+	        ipfeild = new JTextField(15);
 	        JLabel chooseUsernameLabel = new JLabel("Pick a username:");
+	        JLabel enteripLable = new JLabel("Enter IP:");
 	        JButton enterServer = new JButton("Enter Chat Server");
 	        enterServer.addActionListener(new enterServerButtonListener());
 	        JPanel prePanel = new JPanel(new GridBagLayout());
@@ -68,6 +71,9 @@ package Demo_Chat;
 
 	        prePanel.add(chooseUsernameLabel, preLeft);
 	        prePanel.add(usernameChooser, preRight);
+	        prePanel.add(enteripLable,preLeft);
+	        prePanel.add(ipfeild, preRight);
+	        
 	        preFrame.add(BorderLayout.CENTER, prePanel);
 	        preFrame.add(BorderLayout.SOUTH, enterServer);
 	        preFrame.setSize(300, 300);
