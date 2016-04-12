@@ -33,12 +33,10 @@ public class About extends JDialog {
 	 * Create the dialog.
 	 */
 	public About() {
-		getContentPane().setBackground(Color.DARK_GRAY);
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
 		{
 			JPanel buttonPane = new JPanel();
-			buttonPane.setBackground(Color.DARK_GRAY);
 			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
 			{
@@ -55,15 +53,12 @@ public class About extends JDialog {
 		}
 		{
 			JLabel lblPingamateV = new JLabel("Pingamate v0.1");
-			lblPingamateV.setForeground(Color.LIGHT_GRAY);
-			lblPingamateV.setBackground(Color.WHITE);
 			lblPingamateV.setHorizontalAlignment(SwingConstants.CENTER);
 			getContentPane().add(lblPingamateV, BorderLayout.NORTH);
 		}
 		{
 			JTextArea txtrCreatedBy = new JTextArea();
-			txtrCreatedBy.setForeground(Color.LIGHT_GRAY);
-			txtrCreatedBy.setBackground(Color.DARK_GRAY);
+			txtrCreatedBy.setBackground(Color.WHITE);
 			txtrCreatedBy.setText("Created By: \nAhmed Nor-Dine\nAli Mahouk \nIbrahim Mwinyi\nKaran Jhaveri \nVishal Ghaghada\n");
 			getContentPane().add(txtrCreatedBy, BorderLayout.CENTER);
 		}

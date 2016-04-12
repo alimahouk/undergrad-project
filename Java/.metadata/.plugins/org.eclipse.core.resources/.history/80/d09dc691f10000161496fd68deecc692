@@ -46,8 +46,6 @@ public class Chats extends JDialog {
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public Chats() {
-		setForeground(Color.LIGHT_GRAY);
-		setBackground(Color.DARK_GRAY);
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -55,8 +53,6 @@ public class Chats extends JDialog {
 		contentPanel.setLayout(new BorderLayout(0, 0));
 		
 		JSplitPane splitPane = new JSplitPane();
-		splitPane.setForeground(Color.LIGHT_GRAY);
-		splitPane.setBackground(Color.DARK_GRAY);
 		contentPanel.add(splitPane, BorderLayout.NORTH);
 		
 		JButton btnHome = new JButton("Home");
@@ -67,7 +63,7 @@ public class Chats extends JDialog {
 		});
 		splitPane.setLeftComponent(btnHome);
 		
-		final JLabel lblHeading = new JLabel("");
+		 final JLabel lblHeading = new JLabel("");
 		lblHeading.setHorizontalAlignment(SwingConstants.CENTER);
 		splitPane.setRightComponent(lblHeading);
 		
@@ -76,16 +72,12 @@ public class Chats extends JDialog {
 		contentPanel.add(splitPane_1, BorderLayout.SOUTH);
 		
 		textField = new JTextField();
-		textField.setForeground(Color.LIGHT_GRAY);
-		textField.setBackground(Color.DARK_GRAY);
 		splitPane_1.setLeftComponent(textField);
 		textField.setColumns(10);
 		
 		JButton btnSend = new JButton("Send");
 		
 		final JList list = new JList();
-		list.setForeground(Color.LIGHT_GRAY);
-		list.setBackground(Color.DARK_GRAY);
 		list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		list.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		list.setModel(new AbstractListModel() {
@@ -101,8 +93,7 @@ public class Chats extends JDialog {
 		contentPanel.add(list, BorderLayout.WEST);
 		
 		final JTextArea textArea = new JTextArea();
-		textArea.setForeground(Color.LIGHT_GRAY);
-		textArea.setBackground(Color.DARK_GRAY);
+		textArea.setBackground(Color.LIGHT_GRAY);
 		contentPanel.add(textArea, BorderLayout.CENTER);
 		
 		btnSend.addActionListener(new ActionListener() {
