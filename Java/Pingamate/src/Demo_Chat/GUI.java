@@ -65,7 +65,7 @@ package Demo_Chat;
 	        GridBagConstraints preLeft = new GridBagConstraints();
 	        preLeft.anchor = GridBagConstraints.WEST;
 	        preLeft.insets = new Insets(0, 10, 0, 10);
-	        // preRight.weightx = 2.0;
+	        preRight.weightx = 2.0;
 	        preRight.fill = GridBagConstraints.HORIZONTAL;
 	        preRight.gridwidth = GridBagConstraints.REMAINDER;
 
